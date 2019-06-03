@@ -8,8 +8,9 @@
  * @format
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
+import Storybook from './storybook'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -18,8 +19,8 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-interface Props {}
-export default class App extends Component<Props> {
+interface Props { }
+export class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
@@ -49,3 +50,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default Storybook
